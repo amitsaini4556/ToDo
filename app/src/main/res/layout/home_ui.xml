@@ -6,7 +6,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="20dp"
         android:layout_margin="10dp"
         >
 

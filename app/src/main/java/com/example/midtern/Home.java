@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,5 +29,11 @@ public class Home extends AppCompatActivity {
         myHomeData.add(new MyHomeData("PrePlacement Talk"));
         myHomeAdapter = new MyHomeDataAdapter(myHomeData,this);
         recyclerView.setAdapter(myHomeAdapter);
+    }
+
+    public void addNew(View view) {
+        EditText editText = findViewById(R.id.editTextTextPersonName);
+        String add = editText.getText().toString();
+        myHomeData.add(new MyHomeData(add));
     }
 }
